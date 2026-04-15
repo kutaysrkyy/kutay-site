@@ -60,12 +60,12 @@ const T = {
       cardBadge: 'CANLI',
       cardRows: [
         ['Executor', 'Macho Executor'],
-        ['Güncel Sürüm', 'v4.1.0'],
+        ['Güncel Sürüm', '1337'],
         ['Lisans Tipi', 'HWID Kilidi'],
         ['ESP Modülü', 'Aktif'],
         ['Aimbot Modülü', 'Aktif'],
         ['Anti-Detect', 'Aktif'],
-        ['Son Güncelleme', '2025 · v4.1'],
+        ['Son Güncelleme', '2026 · 1337'],
         ['Destek Kanalı', 'Discord 7/24'],
       ],
       pricingLabel: '// fiyatlar',
@@ -105,13 +105,13 @@ const T = {
       discordPlaceholder: 'örn: kutay',
       paymentLabel: 'Ödeme Yöntemi',
       paymentPlaceholder: 'Seçin...',
-      payments: ['Papara', 'Kripto (BTC / ETH / USDT)', 'PayPal', 'Banka Havalesi'],
+      payments: ['Shopier', 'Hesap.com.tr', 'PayPal'],
       submitBtn: 'Talebi Gönder',
       note: '🔒 Bilgileriniz yalnızca sipariş işlemi için kullanılır',
       successTitle: 'Talebiniz Alındı',
       successMsg: 'Discord üzerinden sizinle iletişime geçeceğiz.\nOrtalama 1–12 saat içinde aktif edilir.',
     },
-    footer: '© 2025 kutayilah · Tüm hakları saklıdır',
+    footer: '© 2026 kutayilah · Tüm hakları saklıdır',
     langBtn: 'English',
   },
   en: {
@@ -145,7 +145,7 @@ const T = {
       cardBadge: 'LIVE',
       cardRows: [
         ['Executor', 'Macho Executor'],
-        ['Current Version', 'v4.1.0'],
+        ['Current Version', '1337'],
         ['License Type', 'HWID Lock'],
         ['ESP Module', 'Active'],
         ['Aimbot Module', 'Active'],
@@ -237,7 +237,7 @@ const featuresData = {
 const faqsData = {
   tr: [
     { q: 'kutayilah.lua hangi executor\'larla çalışır?',
-      a: 'Öncelikli olarak Macho Executor ile optimize edilmiştir. Bunun yanı sıra diğer popüler executor\'larla da büyük ölçüde uyumludur.' },
+      a: 'Öncelikli olarak Macho Executor ile optimize edilmiştir.' },
     { q: 'Lisansım HWID\'e mi bağlı?',
       a: 'Evet. Her lisans tek bir cihaza (HWID) bağlanır. Cihaz değiştirmeniz durumunda Discord\'dan ticket açarak transfer talebinde bulunabilirsiniz.' },
     { q: 'Detect riski var mı?',
