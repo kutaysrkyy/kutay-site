@@ -1,0 +1,175 @@
+.features-page {
+  min-height: 100vh;
+  padding: 120px 48px;
+  background: var(--bg);
+  position: relative;
+  z-index: 2;
+}
+
+.features-page-header {
+  max-width: 1100px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+  position: relative;
+}
+
+.btn-back {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid var(--border2);
+  padding: 8px 16px;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  color: var(--white);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.features-page-title {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.features-page-sub {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.features-page-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.detailed-feat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFade 0.6s forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.detailed-feat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--accent-line);
+  background: var(--surface2);
+}
+
+.detailed-feat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.detailed-feat-card:hover::before {
+  opacity: 1;
+}
+
+.df-icon {
+  width: 56px; height: 56px;
+  background: var(--accent-glow);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 24px;
+}
+
+.df-title {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.df-desc {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.df-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.df-tag {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  color: var(--gray);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.features-notice {
+  max-width: 800px;
+  margin: 64px auto 0 auto;
+  background: rgba(20, 184, 166, 0.05);
+  border: 1px solid var(--accent-line);
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fn-icon {
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.fn-text {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+@keyframes slideUpFade {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .features-page-header {
+    margin-bottom: 48px;
+    padding-top: 48px;
+  }
+  .btn-back {
+    top: 0;
+    transform: none;
+  }
+  .features-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

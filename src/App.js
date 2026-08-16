@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import FeaturesPage from './FeaturesPage';
 
 // ─── SVG ICON ────────────────────────────────────────────────────────────────
 const Ic = ({ d, size = 16 }) => (
@@ -431,18 +432,24 @@ export default function App() {
   const faqs = faqsData[lang];
   const testimonials = testimonialsData[lang];
 
+  const [currentPage, setCurrentPage] = useState('home');
+
   const scroll = id => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+
+  if (currentPage === 'features') {
+    return <FeaturesPage lang={lang} setPage={setCurrentPage} />;
+  }
 
   return (
     <>
       {/* NAVBAR */}
       <nav className="navbar">
-        <a className="logo" href="/">
+        <a className="logo" href="/" onClick={e => { e.preventDefault(); setCurrentPage('home'); }}>
           <LogoIcon />
           {' '}narcolepsy<span className="red" style={{color:'var(--accent)'}}>.</span><span className="dim">lua</span>
         </a>
         <ul className="nav-links">
-          <li><a href="#features" onClick={e => { e.preventDefault(); scroll('features'); }}>{t.nav.features}</a></li>
+          <li><a href="#features" onClick={e => { e.preventDefault(); setCurrentPage('features'); }}>{t.nav.features}</a></li>
           <li><a href="#about"    onClick={e => { e.preventDefault(); scroll('about');    }}>{t.nav.about}</a></li>
           <li><a href="#pricing"  onClick={e => { e.preventDefault(); scroll('pricing');  }}>{t.nav.pricing}</a></li>
           <li><a href="#faq"      onClick={e => { e.preventDefault(); scroll('faq');      }}>{t.nav.faq}</a></li>
@@ -475,7 +482,7 @@ export default function App() {
             <p className="hero-sub">{t.hero.sub}</p>
             <div className="hero-actions">
               <button className="btn-red" onClick={() => scroll('pricing')}>{t.hero.btnBuy}</button>
-              <button className="btn-ghost" onClick={() => scroll('features')}>{t.hero.btnFeatures}</button>
+              <button className="btn-ghost" onClick={() => setCurrentPage('features')}>{t.hero.btnFeatures}</button>
             </div>
           </div>
 
@@ -529,37 +536,17 @@ export default function App() {
         </div>
       </div>
 
-      {/* FEATURES */}
-      <section id="features">
-        <div className="section-wrap">
-          <div className="section-label">{s.featuresLabel}</div>
-          <h2 className="section-h2">{s.featuresH2a}<span>{s.featuresH2b}</span>{s.featuresH2c}</h2>
-          <div className="features-grid">
-            {features.map((f, i) => (
-              <div className="feat-card" key={i}>
-                <div className="feat-icon-wrap"><Ic d={P[f.icon]} size={16} /></div>
-                <div className="feat-title">{f.title}</div>
-                <div className="feat-desc">{f.desc}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* YOUTUBE EMBED */}
-          <div className="yt-wrap">
-            <div className="yt-label">
-              <span className="yt-play-dot">▶</span>
-              {lang === 'tr' ? 'Script Tanıtım Videosu' : 'Script Preview Video'}
-            </div>
-            <div className="yt-frame-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/rq1IxmFKGb4?start=1"
-                title="narcolepsy.lua preview"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </div>
+      {/* FEATURES LINK SECTION */}
+      <section id="features-preview" style={{ textAlign: 'center', padding: '64px 24px' }}>
+        <h2 className="section-h2" style={{ marginBottom: 24 }}>{lang === 'tr' ? 'Detaylı Sistem Özellikleri' : 'Detailed System Features'}</h2>
+        <p style={{ color: 'var(--gray)', marginBottom: 32, maxWidth: 600, margin: '0 auto 32px auto', lineHeight: 1.6 }}>
+          {lang === 'tr' 
+            ? 'Yüksek performans, gelişmiş güvenlik, akıcı DUI arayüzü ve modüler yapı hakkında tüm detayları keşfetmek için özellikler sayfamızı inceleyin.'
+            : 'Explore our features page to discover all the details about high performance, advanced security, fluid DUI interface, and modular architecture.'}
+        </p>
+        <button className="btn-ghost" onClick={() => setCurrentPage('features')}>
+          {lang === 'tr' ? 'Tüm Özellikleri İncele →' : 'Explore All Features →'}
+        </button>
       </section>
 
       {/* ABOUT */}
