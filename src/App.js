@@ -35,7 +35,7 @@ const T = {
     },
     hero: {
       label: 'Macho Executor · Lua Script',
-      sub: 'Macho Executor için özel geliştirilmiş, HWID korumalı ve düzenli güncellenen profesyonel Lua script paketi. Güvenli, hızlı, kararlı.',
+      sub: 'Macho Executor için özel geliştirilmiş, gelişmiş Lua sanal makine destekli ve düzenli güncellenen profesyonel Lua script paketi. Güvenli, hızlı, kararlı.',
       btnBuy: 'Hemen Satın Al',
       btnFeatures: 'Özellikleri Gör',
     },
@@ -48,10 +48,10 @@ const T = {
       aboutLabel: '// hakkında',
       aboutH2: ['Macho için ', 'yazılmış', ',\nher detayı düşünülmüş'],
       aboutP1: 'narcolepsy.lua, Macho Executor\'ın altyapısına özel optimize edilmiş bir Lua script paketidir. Piyasadaki genel amaçlı scriptlerin aksine, her modül Macho\'nun API\'ına göre sıfırdan yazılmıştır.',
-      aboutP2: 'HWID tabanlı lisanslama sistemi ile script yalnızca senin cihazında çalışır. Kopyalanamaz, paylaşılamaz. Her güncelleme Discord kanalına düşer, hiçbir şeyi kaçırmazsın.',
+      aboutP2: 'Gelişmiş lisanslama sistemi ile script yalnızca doğrulanmış Lua ortamında çalışır. Her güncelleme Discord kanalına düşer, hiçbir şeyi kaçırmazsın.',
       aboutList: [
         'Macho Executor native uyumluluk',
-        'HWID tabanlı kopyalanmaz lisans sistemi',
+        'Gelişmiş Lua sandbox koruması',
         'Oyun güncellemelerine karşı hızlı yama',
         'Modüler yapı — ihtiyacın kadar yükle',
         'Aktif Discord topluluğu ve destek',
@@ -61,9 +61,9 @@ const T = {
       cardRows: [
         ['Executor', 'Macho Executor'],
         ['Güncel Sürüm', 'v4.1.0'],
-        ['Lisans Tipi', 'HWID Kilidi'],
+        ['Lisans Tipi', 'Güvenli Doğrulama'],
         ['DUI Gizlilik', 'Aktif'],
-        ['Freecam', 'ReaperV4 Destekli'],
+        ['Lua Motoru', 'Optimize Edilmiş'],
         ['Log Bypass', 'Aktif (+50 Script)'],
         ['Anti-Detect', 'Aktif'],
         ['Destek Kanalı', 'Discord 7/24'],
@@ -82,9 +82,9 @@ const T = {
       yearly: { name: 'YILLIK', tagline: 'Maksimum tasarruf', period: '/yıl', badge: null },
       buyBtn: 'Satın Al',
       feats: [
-        'HWID Kilidi',
+        'Güvenli Lisans',
         'Tüm Bypass Özellikleri',
-        'Gelişmiş Freecam (ReaperV4)',
+        'Gelişmiş Lua Sanal Makinesi',
         'DUI Gizli Menü',
         'Anti-Cheat Engelleyici',
         'Öncelikli Destek',
@@ -120,7 +120,7 @@ const T = {
     },
     hero: {
       label: 'Macho Executor · Lua Script',
-      sub: 'A professional Lua script package built exclusively for Macho Executor — HWID-protected, regularly updated. Secure, fast, stable.',
+      sub: 'A professional Lua script package built exclusively for Macho Executor — protected by an advanced Lua sandbox, regularly updated. Secure, fast, stable.',
       btnBuy: 'Buy Now',
       btnFeatures: 'See Features',
     },
@@ -133,10 +133,10 @@ const T = {
       aboutLabel: '// about',
       aboutH2: ['Built for ', 'Macho', ',\nevery detail considered'],
       aboutP1: 'narcolepsy.lua is a Lua script package optimized exclusively for the Macho Executor infrastructure. Unlike generic scripts on the market, every module has been written from scratch against Macho\'s API.',
-      aboutP2: 'With HWID-based licensing, the script runs only on your device — it cannot be copied or shared. Every update drops in the Discord channel so you never miss a thing.',
+      aboutP2: 'With an advanced licensing system, the script runs only in a verified Lua environment. Every update drops in the Discord channel so you never miss a thing.',
       aboutList: [
         'Macho Executor native compatibility',
-        'HWID-based, non-copyable license system',
+        'Advanced Lua sandbox protection',
         'Fast patch cycle against game updates',
         'Modular architecture — load only what you need',
         'Active Discord community & support',
@@ -146,9 +146,9 @@ const T = {
       cardRows: [
         ['Executor', 'Macho Executor'],
         ['Current Version', 'v4.1.0'],
-        ['License Type', 'HWID Lock'],
+        ['License Type', 'Secure Verification'],
         ['DUI Stealth', 'Active'],
-        ['Freecam', 'ReaperV4 Supported'],
+        ['Lua Engine', 'Optimized'],
         ['Log Bypass', 'Active (+50 Scripts)'],
         ['Anti-Detect', 'Active'],
         ['Support Channel', 'Discord 24/7'],
@@ -168,9 +168,9 @@ const T = {
       yearly: { name: 'YEARLY', tagline: 'Maximum savings', period: '/yr', badge: null },
       buyBtn: 'Buy Now',
       feats: [
-        'HWID Lock',
+        'Secure License',
         'All Bypass Features',
-        'Advanced Freecam (ReaperV4)',
+        'Advanced Lua Sandbox',
         'DUI Stealth Menu',
         'Anti-Cheat Blocker',
         'Priority Support',
@@ -191,7 +191,7 @@ const T = {
       discordPlaceholder: 'e.g. narcolepsy',
       paymentLabel: 'Payment Method',
       paymentPlaceholder: 'Select...',
-      payments: ['Papara', 'Crypto (BTC / ETH / USDT)', 'PayPal', 'Bank Transfer'],
+      payments: ['Crypto (BTC / ETH / USDT)', 'PayPal', 'Bank Transfer'],
       submitBtn: 'Submit Request',
       note: '🔒 Your info is used only for order processing',
       successTitle: 'Request Received',
@@ -227,8 +227,8 @@ const faqsData = {
   tr: [
     { q: 'narcolepsy.lua hangi executor\'larla çalışır?',
       a: 'Öncelikli olarak Macho Executor ile optimize edilmiştir.' },
-    { q: 'Lisansım HWID\'e mi bağlı?',
-      a: 'Evet. Her lisans tek bir cihaza (HWID) bağlanır. Cihaz değiştirmeniz durumunda Discord\'dan ticket açarak transfer talebinde bulunabilirsiniz.' },
+    { q: 'Lisansım başka cihaza aktarılabilir mi?',
+      a: 'Lisansınız güvenli bir anahtarla doğrulanır. Cihaz değiştirmeniz durumunda Discord\'dan ticket açarak doğrulama sistemini sıfırlayabilirsiniz.' },
     { q: 'Detect riski var mı?',
       a: 'narcolepsy.lua gelişmiş obfuscation ve anti-detect katmanlarıyla korunmaktadır. Ancak hiçbir script %100 garanti veremez; güncel sürümü kullanmanız önemlidir.' },
     { q: 'Güncellemeler nasıl alınır?',
@@ -236,13 +236,13 @@ const faqsData = {
     { q: 'Ödeme yöntemleri nelerdir?',
       a: 'Papara, Kripto para (BTC / ETH / USDT), PayPal ve banka havalesi kabul edilmektedir.' },
     { q: 'Trial mümkün mü?',
-      a: 'Discord sunucumuzda belirli koşulları sağlayan üyeler için 24 saatlik trial imkânı sunulmaktadır. Detay için sunucumuza katılın.' },
+      a: 'Şu an için trial (deneme) sürümü verilmemektedir.' },
   ],
   en: [
     { q: 'Which executors does narcolepsy.lua support?',
       a: 'It is primarily optimized for Macho Executor. It is also largely compatible with other popular executors.' },
-    { q: 'Is my license tied to my HWID?',
-      a: 'Yes. Each license is bound to a single device (HWID). If you change your device, you can open a ticket on Discord to request a transfer.' },
+    { q: 'Can my license be transferred to another device?',
+      a: 'Your license is verified securely. If you change your device, you can open a ticket on Discord to reset the verification system.' },
     { q: 'Is there a detection risk?',
       a: 'narcolepsy.lua is protected by advanced obfuscation and anti-detect layers. However, no script can guarantee 100% safety; always use the latest version.' },
     { q: 'How do I receive updates?',
@@ -250,7 +250,7 @@ const faqsData = {
     { q: 'What payment methods are accepted?',
       a: 'Papara, Cryptocurrency (BTC / ETH / USDT), PayPal, and bank transfer are accepted.' },
     { q: 'Is a trial available?',
-      a: 'A 24-hour trial is available for members who meet certain conditions in our Discord server. Join us for details.' },
+      a: 'Currently, no trial version is provided.' },
   ],
 };
 
@@ -260,7 +260,7 @@ const testimonialsData = {
     { handle: 'voidor',  label: 'VO', text: 'Macho ile birlikte kullandım, detect yok. ESP modülü özellikle çok temiz çalışıyor.', stars: 5 },
     { handle: 'sxlaris', label: 'SX', text: 'Diğer scriptlere kıyasla CPU kullanımı gerçekten düşük. FPS\'im hiç düşmedi.', stars: 5 },
     { handle: 'rektify', label: 'RK', text: 'Destek ekibi çok hızlı. Sorunum 20 dakikada çözüldü, güncelleme anında geldi.', stars: 5 },
-    { handle: 'nxvaris', label: 'NX', text: 'HWID lock sistemi güvenli. Başkasına verdiğim şifreyle kullanmaya çalıştı, çalışmadı.', stars: 5 },
+    { handle: 'nxvaris', label: 'NX', text: 'Lisans doğrulama sistemi gerçekten güvenli. Başkasına verdiğim şifreyle kullanmaya çalıştı, çalışmadı.', stars: 5 },
     { handle: 'zpharex', label: 'ZP', text: 'Custom config desteği sayesinde her şeyi kendi istediğim gibi ayarladım.', stars: 5 },
     { handle: 'cxleron', label: 'CX', text: 'Fiyat performans açısından piyasanın en iyisi. Kesinlikle tavsiye ederim.', stars: 5 },
   ],
@@ -268,7 +268,7 @@ const testimonialsData = {
     { handle: 'voidor',  label: 'VO', text: 'Used it alongside Macho, zero detection. The ESP module works especially clean.', stars: 5 },
     { handle: 'sxlaris', label: 'SX', text: 'CPU usage is genuinely low compared to other scripts. My FPS never dropped.', stars: 5 },
     { handle: 'rektify', label: 'RK', text: 'Support team is super fast. My issue was resolved in 20 minutes, update came instantly.', stars: 5 },
-    { handle: 'nxvaris', label: 'NX', text: 'The HWID lock system is solid. Someone tried to use it with a shared key — it just didn\'t work.', stars: 5 },
+    { handle: 'nxvaris', label: 'NX', text: 'The license verification system is solid. Someone tried to use it with a shared key — it just didn\'t work.', stars: 5 },
     { handle: 'zpharex', label: 'ZP', text: 'Custom config support let me set everything exactly how I wanted it.', stars: 5 },
     { handle: 'cxleron', label: 'CX', text: 'Best value for money on the market. Highly recommended.', stars: 5 },
   ],
@@ -283,7 +283,7 @@ const makePlans = (lang) => {
       id: 'monthly',
       name: t.monthly.name,
       tagline: t.monthly.tagline,
-      price: 25,
+      price: 20,
       currency: '€',
       period: t.monthly.period,
       hot: false,
@@ -304,7 +304,7 @@ const makePlans = (lang) => {
       id: 'quarterly',
       name: t.quarterly.name,
       tagline: t.quarterly.tagline,
-      price: 40,
+      price: 30,
       currency: '€',
       period: t.quarterly.period,
       hot: true,
@@ -325,7 +325,7 @@ const makePlans = (lang) => {
       id: 'yearly',
       name: t.yearly.name,
       tagline: t.yearly.tagline,
-      price: 50,
+      price: 40,
       currency: '€',
       period: t.yearly.period,
       hot: false,
@@ -492,13 +492,13 @@ export default function App() {
               <div><span className="t-cm">-- Macho Executor Compatible</span></div>
               <br/>
               <div><span className="t-kw">local</span> <span className="t-var">cfg</span> = <span className="t-kw">{'{}'}</span></div>
-              <div><span className="t-var">cfg</span>.hwid    = <span className="t-str">"HWID-XXXX-XXXX"</span></div>
+              <div><span className="t-var">cfg</span>.luaEnv  = <span className="t-str">"Secure Sandbox"</span></div>
               <div><span className="t-var">cfg</span>.esp     = <span className="t-num">true</span></div>
               <div><span className="t-var">cfg</span>.aimbot  = <span className="t-num">true</span></div>
               <div><span className="t-var">cfg</span>.fov     = <span className="t-num">90</span></div>
               <br/>
               <div><span className="t-kw">function</span> <span className="t-fn">Init</span><span className="t-var">()</span></div>
-              <div>&nbsp; <span className="t-fn">ValidateHWID</span><span className="t-var">(</span><span className="t-var">cfg</span><span className="t-var">)</span></div>
+              <div>&nbsp; <span className="t-fn">ValidateLicense</span><span className="t-var">(</span><span className="t-var">cfg</span><span className="t-var">)</span></div>
               <div>&nbsp; <span className="t-fn">LoadModules</span><span className="t-var">(</span><span className="t-var">cfg</span><span className="t-var">)</span></div>
               <div>&nbsp; <span className="t-fn">print</span><span className="t-var">(</span><span className="t-str">"✓ loaded"</span><span className="t-var">)</span></div>
               <div><span className="t-kw">end</span></div>

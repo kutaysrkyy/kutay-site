@@ -7,11 +7,11 @@
   --surface2: #1a2236;
   --border:   #1e2a42;
   --border2:  #2a3a5c;
-  --accent:   #4a7cff;
-  --accent-dim:  #3358cc;
-  --accent-glow: rgba(74, 124, 255, 0.15);
-  --accent-line: rgba(74, 124, 255, 0.30);
-  --accent2:  #60a5fa;
+  --accent:   #14b8a6;
+  --accent-dim:  #0d9488;
+  --accent-glow: rgba(20, 184, 166, 0.15);
+  --accent-line: rgba(20, 184, 166, 0.30);
+  --accent2:  #2dd4bf;
   --white:    #e8edf5;
   --gray:     #7a8ba8;
   --gray2:    #4a5670;
@@ -96,7 +96,7 @@ body::after {
   color: #fff;
   font-family: var(--display);
   letter-spacing: -1px;
-  box-shadow: 0 2px 8px rgba(74, 124, 255, 0.25);
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.25);
 }
 
 .logo-dot { color: var(--accent); }
@@ -166,12 +166,12 @@ body::after {
   cursor: pointer;
   transition: all 0.25s;
   border-radius: 6px;
-  box-shadow: 0 2px 12px rgba(74, 124, 255, 0.2);
+  box-shadow: 0 2px 12px rgba(20, 184, 166, 0.2);
 }
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(74, 124, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.35);
 }
 
 /* ── HERO ── */
@@ -200,7 +200,7 @@ body::after {
   position: absolute;
   width: 800px; height: 800px;
   left: -200px; top: -200px;
-  background: radial-gradient(circle, rgba(74, 124, 255, 0.08) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -210,7 +210,7 @@ body::after {
   position: absolute;
   width: 600px; height: 600px;
   right: -100px; bottom: -200px;
-  background: radial-gradient(circle, rgba(96, 165, 250, 0.05) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.05) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -289,12 +289,12 @@ body::after {
   cursor: pointer;
   transition: all 0.25s;
   border-radius: 6px;
-  box-shadow: 0 2px 12px rgba(74, 124, 255, 0.2);
+  box-shadow: 0 2px 12px rgba(20, 184, 166, 0.2);
 }
 
 .btn-red:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(74, 124, 255, 0.4);
+  box-shadow: 0 8px 28px rgba(20, 184, 166, 0.4);
 }
 
 .btn-ghost {
@@ -322,7 +322,7 @@ body::after {
   opacity: 0;
   animation: fadeUp 0.6s ease 0.5s forwards;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(74, 124, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(20, 184, 166, 0.05);
 }
 
 .terminal-bar {
@@ -575,7 +575,7 @@ body::after {
 }
 
 .info-row:last-child { border-bottom: none; }
-.info-row:hover { background: rgba(74, 124, 255, 0.03); }
+.info-row:hover { background: rgba(20, 184, 166, 0.03); }
 
 .info-row-label { color: var(--gray); font-weight: 400; }
 .info-row-val   { color: var(--white); font-family: var(--mono); font-size: 0.78rem; }
@@ -638,7 +638,7 @@ body::after {
 .tgl.active .tgl-thumb {
   left: 23px;
   background: var(--accent);
-  box-shadow: 0 0 8px rgba(74, 124, 255, 0.6);
+  box-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
 }
 
 .save-pill {
@@ -791,7 +791,7 @@ body::after {
   border-radius: 6px;
 }
 
-.btn-plan-red:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(74, 124, 255, 0.35); }
+.btn-plan-red:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35); }
 
 .btn-plan-line {
   background: transparent;
@@ -919,7 +919,7 @@ body::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 100%, rgba(74, 124, 255, 0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 100%, rgba(20, 184, 166, 0.06) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -1105,7 +1105,7 @@ footer {
   margin-top: 6px;
   border-radius: 6px;
 }
-.modal-submit:hover { box-shadow: 0 6px 20px rgba(74, 124, 255, 0.35); transform: translateY(-1px); }
+.modal-submit:hover { box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35); transform: translateY(-1px); }
 
 .modal-note {
   text-align: center;
@@ -1231,7 +1231,7 @@ a.btn-plan-red {
 
 a.btn-plan-red:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(74, 124, 255, 0.35);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35);
 }
 
 a.btn-plan-line {
